@@ -74,7 +74,7 @@ md5sum $openwrt_sta_uefi > openwrt_sta_uefi.md5
 exit 0
 EOF
 
-cat>lenyu.sh<<-\EOOF
+cat>lenyu.sh<<-\EOF
 #!/bin/sh
 lenyu_version="`date '+%y%m%d%H%M'`_sta_Len yu" 
 echo $lenyu_version >  wget/DISTRIB_REVISION1 
@@ -103,7 +103,7 @@ if [ $? != 0 ]; then
 	exit 0
 	EOF
 fi
-EOOF
+EOF
 
 cat>files/usr/share/Check_Update.sh<<-\EOF
 #!/bin/sh
