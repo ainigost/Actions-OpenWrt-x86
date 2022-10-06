@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 #
 # Copyright (c) 2019-2020 P3TERX <https://p3terx.com>
 #
@@ -28,7 +28,7 @@ touch files/usr/share/Lenyu-auto.sh
 
 
 cat>rename.sh<<-\EOF
-#!/bin/bash
+#!/bin/sh
 rm -rf  bin/targets/x86/64/config.buildinfo
 rm -rf  bin/targets/x86/64/feeds.buildinfo
 rm -rf  bin/targets/x86/64/openwrt-x86-64-generic-kernel.bin
@@ -75,7 +75,7 @@ exit 0
 EOF
 
 cat>lenyu.sh<<-\EOOF
-#!/bin/bash
+#!/bin/sh
 lenyu_version="`date '+%y%m%d%H%M'`_sta_Len yu" 
 echo $lenyu_version >  wget/DISTRIB_REVISION1 
 echo $lenyu_version | cut -d _ -f 1 >  files/etc/lenyu_version  
@@ -104,7 +104,7 @@ fi
 EOOF
 
 cat>files/usr/share/Check_Update.sh<<-\EOF
-#!/bin/bash
+#!/bin/sh
 # https://github.com/ainigost/Actions-OpenWrt-x86
 # Actions-OpenWrt-x86 By Lenyu 20210505
 #path=$(dirname $(readlink -f $0))
@@ -250,7 +250,7 @@ exit 0
 EOF
 
 cat>files/usr/share/Lenyu-auto.sh<<-\EOF
-#!/bin/bash
+#!/bin/sh
 # https://github.com/ainigost/Actions-OpenWrt-x86
 # Actions-OpenWrt-x86 By Lenyu 20210505
 #path=$(dirname $(readlink -f $0))
