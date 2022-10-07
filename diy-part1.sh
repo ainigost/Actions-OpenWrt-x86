@@ -26,6 +26,18 @@ touch wget/DISTRIB_REVISION3
 touch files/usr/share/Check_Update.sh
 touch files/usr/share/Lenyu-auto.sh
 
+cat>files/etc/banner<<-\EOF
+
+######################################
+
+Auto Update Command: lenyu-auto
+
+Manual Update Command: lenyu
+
+######################################
+
+
+EOF
 
 cat>rename.sh<<-\EOF
 #!/bin/bash
