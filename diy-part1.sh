@@ -35,9 +35,9 @@ cat>files/etc/banner<<-\EOF
 # |_____||  _||___||_|_||_____||_|  |_|   #
 #        |_|                              #
 #                                         #
-# Auto Update Command: lenyu-auto         #
+#    Auto Update Command: lenyu-auto      #
 #                                         #
-# Manual Update Command: lenyu            # 
+#     Manual Update Command: lenyu        #
 #                                         #
 ###########################################
 
